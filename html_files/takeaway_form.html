@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="javascript" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  <link rel="javascript" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+  <form method="post" action="/<%=id%>/sell">
+  <div class="form-group">
+    <label for="number">Amount in Kgs</label>
+    <input type="text" class="form-control"  placeholder="amount in kgs" name="img[amount]" required>
+  </div>
+
+<div class="form-group">
+  <label class="form-check-label" placeholder="location"required>Location</label>
+ <input type="text" class="form-control" id="location" placeholder="location" name="img[location]"required>
+  
+</div>
+<div class="form-group">
+  <label class="form-check-label" placeholder="location"required>image</label>
+ <input type="text" class="form-control" id="image" placeholder="image" name="img[image]"required>
+  
+</div>
+
+<div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" placeholder="Enter product description time preferred and any other instructions" name="img[description]">
+    
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+ 
+</form>
+
+</body>
+</html>
